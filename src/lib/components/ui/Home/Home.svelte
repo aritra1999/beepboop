@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { ClipboardCopy, File, FileSignature, Table } from 'lucide-svelte';
 	import BentoGrid from '$lib/components/ui/BentoGrid/BentoGrid.svelte';
 	import BentoGridItem from '$lib/components/ui/BentoGrid/BentoGridItem.svelte';
 
