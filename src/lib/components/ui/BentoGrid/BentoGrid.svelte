@@ -6,7 +6,7 @@
 
 <div
 	class={cn(
-		'mx-auto grid max-w-7xl grid-cols-1 gap-4 md:auto-rows-[18rem] md:grid-cols-3 ',
+		'mx-auto grid max-w-7xl grid-cols-1 gap-3 md:auto-rows-[18rem] md:grid-cols-4',
 		className
 	)}
 >

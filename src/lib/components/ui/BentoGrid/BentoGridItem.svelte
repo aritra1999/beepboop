@@ -13,7 +13,6 @@
 		className
 	)}
 >
-	<slot name="header" />
 	<div class="transition duration-200 group-hover/bento:translate-x-2">
 		<slot name="icon" />
 		<div class="mb-2 mt-2 font-sans font-bold text-neutral-600 dark:text-neutral-200">
