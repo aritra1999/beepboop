@@ -5,7 +5,7 @@
 	export let items = [];
 </script>
 
-<BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+<BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] overflow-y-auto pb-20">
 	{#each items as item, i (i)}
 		<BentoGridItem title={item.title} description={item.description} className={item.className}>
 			<div
