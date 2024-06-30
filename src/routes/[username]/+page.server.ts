@@ -71,7 +71,19 @@ export const load = (async ({}) => {
 				title: 'The Art of Design',
 				description: 'Discover the beauty of thoughtful and functional design.',
 				type: 'card-basic',
-				style: 'md:col-span-1 md:col-span-1 '
+				style: 'md:col-span-1 md:row-span-2 '
+			},
+			{
+				title: 'The Art of Design',
+				description: 'Discover the beauty of thoughtful and functional design.',
+				type: 'card-basic',
+				style: 'md:col-span-2 md:col-row-1'
+			},
+			{
+				title: 'The Art of Design',
+				description: 'Discover the beauty of thoughtful and functional design.',
+				type: 'card-basic',
+				style: 'md:col-span-1 md:col-row-1'
 			}
 		]
 	};
