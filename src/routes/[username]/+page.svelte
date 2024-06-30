@@ -8,7 +8,7 @@
 
 {#if data.profile && data.content}
 	<section class="flex h-screen w-screen items-start justify-center px-3 py-24 sm:py-72">
-		<BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] overflow-y-auto pb-20">
+		<BentoGrid className="max-w-4xl mx-auto overflow-y-auto pb-20">
 			<ProfileCard profile={data.profile} />
 			{#each data.content.items as item, i (i)}
 				<BentoGridItem {item} />

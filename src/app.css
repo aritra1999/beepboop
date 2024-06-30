@@ -78,5 +78,5 @@
 }
 
 .bento-item-base {
-	@apply shadow-input row-span-1 flex flex-col justify-between space-y-4 border border-zinc-900 bg-white transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none;
+	@apply shadow-input flex flex-col justify-between space-y-4 border border-zinc-900 bg-white transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none;
 }
