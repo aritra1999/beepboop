@@ -1,25 +1,17 @@
 <script lang="ts">
+	import type { BentoItem } from '$lib/types';
 	import { cn } from '$lib/utils';
 
-	export let className: string | undefined = undefined;
-	export let title: string | HTMLElement | undefined = undefined;
-	export let description: string | HTMLElement | undefined = undefined;
-	export let icon: HTMLElement | undefined = undefined;
+	export let item: BentoItem;
 </script>
 
-<div
-	class={cn(
-		'group/bento row-span-1 flex flex-col justify-between space-y-4 border border-zinc-900 bg-white p-4 shadow-input transition duration-200 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none',
-		className
-	)}
->
+<div class={cn('group/bento bento-item-base', item.style)}>
 	<div class="transition duration-200 group-hover/bento:translate-x-2">
-		<slot name="icon" />
-		<div class="mb-2 mt-2 font-sans font-bold text-neutral-600 dark:text-neutral-200">
-			{title}
+		<div class="font-bold">
+			{item.title}
 		</div>
-		<div class="font-sans text-xs font-normal text-neutral-600 dark:text-neutral-300">
-			{description}
+		<div class="text-xs">
+			{item.description}
 		</div>
 	</div>
 </div>
