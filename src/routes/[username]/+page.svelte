@@ -7,9 +7,9 @@
 </script>
 
 {#if data.profile && data.content}
-	<section class="flex h-screen w-screen items-start justify-center px-3 py-24 sm:py-72">
-		<BentoGrid className="max-w-4xl mx-auto overflow-y-auto pb-20">
-			<ProfileCard profile={data.profile} />
+	<section class="flex h-screen items-center justify-center">
+		<BentoGrid className="mx-auto overflow-y-auto sm:h-[65vh] h-[90vh] px-3">
+			<ProfileCard profile={data.profile} showGithubStats={data.content.config.showGithubStats} />
 			{#each data.content.items as item, i (i)}
 				<BentoGridItem {item} />
 			{/each}
