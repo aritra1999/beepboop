@@ -1,7 +1,7 @@
 import type { Content, Profile } from '$lib/types';
 import type { PageServerLoad } from './$types';
 
-export const load = (async ({}) => {
+export const load = (async () => {
 	// const username = params.username;
 	// const [profile, content] = await Promise.all([
 	// 	fetch(`https://api.github.com/users/${username}`).then((r) => r.json()),
@@ -28,12 +28,12 @@ export const load = (async ({}) => {
 		type: 'User',
 		site_admin: false,
 		name: 'Aritra Mondal',
-		company: '@leanix',
-		blog: 'aritra1999.github.io',
 		location: 'Bonn, Germany ',
 		email: null,
 		hireable: true,
-		bio: 'Engineering at @leanix\r\n\r\n    \r\n',
+		bio: 'Engineering at @leanix\r\n\r\n    \r\n Work Github: @aritra2021',
+		company: '@leanix',
+		blog: 'aritra1999.github.io',
 		twitter_username: 'aritramondal199',
 		public_repos: 55,
 		public_gists: 3,
@@ -45,45 +45,70 @@ export const load = (async ({}) => {
 
 	const content: Content = {
 		config: {
-			showInformation: true,
+			showGithubStats: true,
 			styles: ''
 		},
 		items: [
 			{
-				title: 'The Digital Revolution',
+				title: 'Hello World',
 				description: 'Dive into the transformative power of technology.',
 				type: 'card-basic',
-				style: 'md:col-span-1 md:row-span-1'
+				style: 'p-4 md:col-span-1 md:row-span-1'
 			},
 			{
-				title: 'The Art of Design',
-				description: 'Discover the beauty of thoughtful and functional design.',
+				title: 'Lorem ipsum',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dignissimos nihil adipisci',
 				type: 'card-basic',
-				style: 'md:col-span-2 md:col-row-1'
+				style: 'p-4 md:col-span-2 md:col-row-1'
 			},
 			{
 				title: 'The Power of Communication',
 				description: 'Understand the impact of effective communication in our lives.',
 				type: 'card-basic',
-				style: 'md:col-span-2 md:row-span-1'
+				style: 'p-4 md:col-span-2 md:row-span-1'
 			},
 			{
-				title: 'The Art of Design',
-				description: 'Discover the beauty of thoughtful and functional design.',
+				title: 'Lorem ipsum',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dignissimos nihil adipisci',
 				type: 'card-basic',
-				style: 'md:col-span-1 md:row-span-2 '
+				style: 'p-4 md:col-span-1 md:row-span-2 '
 			},
 			{
-				title: 'The Art of Design',
-				description: 'Discover the beauty of thoughtful and functional design.',
+				title: 'Lorem ipsum',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dignissimos nihil adipisci',
 				type: 'card-basic',
-				style: 'md:col-span-2 md:col-row-1'
+				style: 'p-4 md:col-span-1 md:col-row-1'
 			},
 			{
-				title: 'The Art of Design',
-				description: 'Discover the beauty of thoughtful and functional design.',
+				title: 'Lorem ipsum',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dignissimos nihil adipisci',
 				type: 'card-basic',
-				style: 'md:col-span-1 md:col-row-1'
+				style: 'p-4 md:col-span-1 md:col-row-1'
+			},
+			{
+				title: 'Lorem ipsum',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dignissimos nihil adipisci',
+				type: 'card-basic',
+				style: 'p-4 md:col-span-1 md:col-row-1'
+			},
+			{
+				title: 'Lorem ipsum',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dignissimos nihil adipisci',
+				type: 'card-basic',
+				style: 'p-4 md:col-span-1 md:col-row-1'
+			},
+			{
+				title: 'Lorem ipsum',
+				description:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, dignissimos nihil adipisci',
+				type: 'card-basic',
+				style: 'p-4 md:col-span-1 md:col-row-1'
 			}
 		]
 	};
