@@ -20,7 +20,7 @@ export interface Profile {
 
 export interface Content {
 	config: {
-		showInformation: boolean;
+		showGithubStats: boolean;
 		styles: string;
 	};
 	items: BentoItem[];
