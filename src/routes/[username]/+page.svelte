@@ -62,7 +62,7 @@
 				{/each}
 			</BentoGrid>
 		{:else}
-			No profile found :(
+			<ErrorAlert error={{ title: 'No such user exists!' }} />
 		{/if}
 	</section>
 {:else}

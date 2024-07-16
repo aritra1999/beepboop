@@ -35,5 +35,5 @@ export interface BentoItem {
 
 export interface AlertError {
 	title: string;
-	description: string[];
+	description?: string[];
 }

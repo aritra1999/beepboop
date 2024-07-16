@@ -10,8 +10,10 @@
 	<Alert.Root variant="destructive">
 		<CircleAlert class="h-4 w-4" />
 		<Alert.Title>{error.title}</Alert.Title>
-		{#each error.description as description}
-			<Alert.Description>{description}</Alert.Description>
-		{/each}
+		{#if error.description}
+			{#each error.description as description}
+				<Alert.Description>{description}</Alert.Description>
+			{/each}
+		{/if}
 	</Alert.Root>
 </div>
