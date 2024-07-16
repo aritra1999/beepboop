@@ -32,3 +32,8 @@ export interface BentoItem {
 	type: 'card-basic';
 	style: string;
 }
+
+export interface AlertError {
+	title: string;
+	description: string[];
+}
