@@ -42,7 +42,7 @@
 			return;
 		}
 
-		await sleep(2000);
+		// await sleep(2000);
 		profile = await loadGithubProfile(username);
 		content = await loadBentoContent(username);
 
@@ -51,11 +51,11 @@
 </script>
 
 {#if !loading}
-	<section class="flex h-screen items-center justify-center">
+	<section class="flex h-screen justify-center">
 		{#if error}
 			<ErrorAlert {error} />
 		{:else if profile && content}
-			<BentoGrid className="mx-auto overflow-y-auto sm:h-[65vh] h-[90vh] px-3">
+			<BentoGrid className="px-3 py-[12vh]">
 				<ProfileCard {profile} showGithubStats={content.config.showGithubStats} />
 				{#each content.items as item, i (i)}
 					<BentoGridItem {item} />
