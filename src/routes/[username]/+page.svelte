@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { sleep } from '$lib/utils';
 	import { page } from '$app/stores';
 	import type { AlertError, Content, Profile } from '$lib/types';
 	import { dummyContent, dummyProfile } from '$lib/dummy';
@@ -42,7 +41,6 @@
 			return;
 		}
 
-		// await sleep(2000);
 		profile = await loadGithubProfile(username);
 		content = await loadBentoContent(username);
 
