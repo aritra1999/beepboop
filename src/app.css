@@ -73,11 +73,11 @@
 		@apply border-border;
 	}
 	body {
-		@apply bg-background text-foreground font-medium;
+		@apply bg-background font-medium text-foreground;
 		font-family: Clash;
 	}
 }
 
 .bento-item-base {
-	@apply shadow-input border-foreground flex flex-col justify-between space-y-4 border-2 transition duration-200 hover:shadow-xl;
+	@apply flex flex-col justify-between space-y-4 border-2 border-foreground shadow-input transition duration-200 hover:shadow-xl;
 }

@@ -29,7 +29,7 @@ export interface Content {
 export interface BentoItem {
 	title: string;
 	description: string;
-	type: 'card-basic';
+	type: string;
 	style: string;
 }
 

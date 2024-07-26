@@ -4,7 +4,7 @@
 	import GitStats from '$lib/components/ui/Profile/GitStats.svelte';
 
 	export let profile: Profile;
-	export let showGithubStats: boolean;
+	export let showGithubStats: boolean = true;
 </script>
 
 <div class="bento-item-base group/bento md:col-span-1 md:row-span-3">
