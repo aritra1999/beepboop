@@ -27,6 +27,26 @@ export const GithubProfileSchema = z.object({
 	updated_at: z.date()
 });
 
+export const BaseCardSchema = z.object({
+	title: z.string(),
+	type: z.string(),
+	style: z.string()
+});
+
+export const DefaultCardSchema = z.object({
+	description: z.string(),
+	...BaseCardSchema.shape
+});
+export type DefaultCardType = z.infer<typeof DefaultCardSchema>;
+
+export const LinkCardSchema = z.object({
+	...BaseCardSchema.shape,
+	link: z.string(),
+	backgroundImage: z.string().url().nullable(),
+	linkIcon: z.string().nullable()
+});
+export type LinkCardType = z.infer<typeof LinkCardSchema>;
+
 export const validate = (content: unknown, schema: ZodSchema) => {
 	return schema.safeParse(content);
 };

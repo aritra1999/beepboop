@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { BentoItem } from '$lib/types';
 	import { cn } from '$lib/utils';
+	import type { DefaultCardType } from '$lib/zod.types';
 
-	export let item: BentoItem;
+	export let item: DefaultCardType;
 </script>
 
 <div class={cn('group/bento bento-item-base', item.style)}>

@@ -23,14 +23,7 @@ export interface Content {
 		showGithubStats: boolean;
 		styles: string;
 	};
-	items: BentoItem[];
-}
-
-export interface BentoItem {
-	title: string;
-	description: string;
-	type: string;
-	style: string;
+	items: unknown[];
 }
 
 export interface AlertError {
