@@ -4,7 +4,17 @@ import type { Config } from 'tailwindcss';
 const config: Config = {
 	darkMode: ['class'],
 	content: ['./src/**/*.{html,js,svelte,ts}'],
-	safelist: ['dark'],
+	safelist: [
+		'dark',
+		{
+			variants: ['sm', 'md', 'lg', 'xl'],
+			pattern: /col-span-(1|2|3|4)/
+		},
+		{
+			variants: ['sm', 'md', 'lg', 'xl'],
+			pattern: /row-span-(1|2|3|4)/
+		}
+	],
 	theme: {
 		container: {
 			center: true,
