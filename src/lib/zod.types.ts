@@ -35,6 +35,7 @@ export const BaseCardSchema = z.object({
 
 export const DefaultCardSchema = z.object({
 	description: z.string(),
+	backgroundImage: z.string().url().nullable(),
 	...BaseCardSchema.shape
 });
 export type DefaultCardType = z.infer<typeof DefaultCardSchema>;

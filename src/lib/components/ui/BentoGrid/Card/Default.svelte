@@ -5,12 +5,19 @@
 	export let item: DefaultCardType;
 </script>
 
-<div class={cn('group/bento bento-item-base', item.style)}>
+<div
+	class={cn(
+		'group/bento bento-item-base',
+		item.style,
+		item.backgroundImage ? 'bg-cover bg-center' : ''
+	)}
+	style={item.backgroundImage ? `background-image: url("${item.backgroundImage}")` : ''}
+>
 	<div class="transition duration-200 group-hover/bento:translate-x-2">
-		<div class="font-semibold">
+		<div class="text-xl font-semibold">
 			{item.title}
 		</div>
-		<div class="text-xs">
+		<div class="text-sm">
 			{item.description}
 		</div>
 	</div>

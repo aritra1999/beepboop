@@ -21,8 +21,7 @@
 	const fetchStuff = async (url: string) => {
 		const response = await fetch(url);
 		if (!response.ok) return null;
-		const data = await response.json();
-		return data;
+		return await response.json();
 	};
 
 	const loadGithubProfile = async (username: string) => {
